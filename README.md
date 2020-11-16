@@ -18,7 +18,9 @@
 * [ ] [Consensus on Transaction Commit](consensus-on-transaction-commit.pdf)
 
 * [ ] DHT
+
 两篇关于分布式哈希表的介绍，[1](dht1.pdf), [2](dht2.pdf)
+
 * [ ] [consistent hash](consistent-hashing-and-random-trees-distributed-caching-protocols-for-relieving-hot-spots-on-the-world-wide-web-technical-publication.pdf)
 
 * [ ] [flake id](http://yellerapp.com/posts/2015-02-09-flake-ids.html)
@@ -27,6 +29,7 @@
 ## lock
 
 * [ ] [chubby](chubby.pdf)
+
 [The Chubby lock service for loosely-coupled distributed systems](https://www.youtube.com/watch?v=PqItueBaiRg&ab_channel=DataCouncil)
 
 * [ ] [Distributed locks with Redis](https://redis.io/topics/distlock)
@@ -75,7 +78,7 @@
 * [ ] [Designs, Lessons and Advice from Building Large Distributed Systems](design-ds.pdf)
 * [ ] [what we talk about when we talk about distributed systems](https://alvaro-videla.com/2015/12/learning-about-distributed-systems.html)
 * [ ] [Design a Cache System](http://blog.gainlo.co/index.php/2016/05/17/design-a-cache-system/)
-[tiny-lfu](cache-policy.pdf)
+    [tiny-lfu](cache-policy.pdf)
 * [ ] [Distributed systems theory](https://www.the-paper-trail.org/post/2014-08-09-distributed-systems-theory-for-the-distributed-systems-engineer/)
 * [ ] [The Tail at Scale](https://research.google/pubs/pub40801/)
 
@@ -90,12 +93,21 @@
 ## MISC
 
 [Distributed systems for fun and profit](http://book.mixu.net/distsys/index.html)
+
 [papers we love](https://github.com/papers-we-love/papers-we-love/tree/master/distributed_systems)
+
 DDIA
+
 [Distributed Systems and the End of the API](https://writings.quilt.org/2014/05/12/distributed-systems-and-the-end-of-the-api/)
+
 [Replication, atomicity and order in distributed systems](http://afeinberg.github.io/2011/06/17/replication-atomicity-and-order-in-distributed-systems.html)
+
 [papers](http://duanple.com/?p=170)
+
 [lock-free](lockfree.pdf)
+
 [A Distributed Systems Reading List](https://dancres.github.io/Pages/)
+
 [ReadingList](http://pages.cs.wisc.edu/~swift/classes/cs739-fa14/wiki/pmwiki.php/Main/ReadingList)
+
 [5-minute rule](5_min_rule_sigmod.pdf)
