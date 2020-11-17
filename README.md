@@ -4,14 +4,27 @@
 
 * [ ] [Lamport Clock](time-clocks.pdf)
 
+[Time Clocks and the Ordering of Events in a Distributed System 译文](http://duanple.com/?p=66)
+
+>狭义相对论告诉我们时空中的事件并不存在一个始终如一的全序关系；不同的观察者对两个事件谁先发生可能具有不同的看法。当且仅当事件e2是由事件e1引起的时候，事件e1和e2之间才存在一个先后关系。
+
+concurrent的事件在偏序中无法定义顺序；通过定义不同进程之间事件的顺序，将偏序扩展为全序
+
+在外部系统介入后，逻辑时钟会产生“果先于因”的异常，因此引入物理时钟来满足“Strong Clock Condition”
+
+[Lamport timestamp](https://en.wikipedia.org/wiki/Lamport_timestamp) -> [vector clock](https://en.wikipedia.org/wiki/Vector_clock)
+
 * [ ] [关于Paxos的历史](http://duanple.com/?p=61)
-* [ ] [paxos made live](paxos-made-live.pdf)
 * [ ] [paxos made simple](paxos-simple-copy.pdf)
-* [ ] [the part-time parliament](the-part-time-parliament.pdf)
 * [ ] [Consensus Protocols: Paxos](https://www.the-paper-trail.org/post/2009-02-03-consensus-protocols-paxos/)
+* [ ] [paxos made live](paxos-made-live.pdf)
 * [ ] [paxos moderately complex](paxos-moderately-complex.pdf)
 * [ ] [paxos lease](paxoslease.pdf)
-* [ ] [Viewstamped replication](vr-revisited.pdf)
+* [ ] [the part-time parliament](the-part-time-parliament.pdf)
+* [ ] [Viewstamped replication](vr.pdf)
+
+[vr-revisit](vr-revisited.pdf)
+
 * [ ] [raft](https://raft.github.io/)
 * [ ] [zab](zab.pdf)
 
@@ -40,6 +53,7 @@
 * [ ] [log](https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying)
 * [ ] [data location](data-location.pdf)
 * [ ] [Better I/O Through Byte-Addressable, Persistent Memory](bpfs.pdf)
+* [ ] [petal](petal.pdf)
 
 ### filesystem
 
@@ -51,6 +65,7 @@
 * [ ] [Analysis of Six Distributed File Systems](a_survey_of_dfs.pdf)
 * [ ] [f2fs](f2fs.pdf)
 * [ ] [btrfs](btrfs.pdf)
+* [ ] [frangipani](thekkath-frangipani.pdf)
 
 ### kv store/object store
 
@@ -78,7 +93,9 @@
 * [ ] [Designs, Lessons and Advice from Building Large Distributed Systems](design-ds.pdf)
 * [ ] [what we talk about when we talk about distributed systems](https://alvaro-videla.com/2015/12/learning-about-distributed-systems.html)
 * [ ] [Design a Cache System](http://blog.gainlo.co/index.php/2016/05/17/design-a-cache-system/)
-    [tiny-lfu](cache-policy.pdf)
+
+[tiny-lfu](cache-policy.pdf)
+
 * [ ] [Distributed systems theory](https://www.the-paper-trail.org/post/2014-08-09-distributed-systems-theory-for-the-distributed-systems-engineer/)
 * [ ] [The Tail at Scale](https://research.google/pubs/pub40801/)
 
