@@ -2,7 +2,7 @@
 
 ## consensus
 
-* [ ] [Lamport Clock](time-clocks.pdf)
+* [x] [Lamport Clock](time-clocks.pdf)
 
 [Time Clocks and the Ordering of Events in a Distributed System 译文](http://duanple.com/?p=66)
 
@@ -14,19 +14,50 @@ concurrent的事件在偏序中无法定义顺序；通过定义不同进程之�
 
 [Lamport timestamp](https://en.wikipedia.org/wiki/Lamport_timestamp) -> [vector clock](https://en.wikipedia.org/wiki/Vector_clock)
 
-* [ ] [关于Paxos的历史](http://duanple.com/?p=61)
-* [ ] [paxos made simple](paxos-simple-copy.pdf)
-* [ ] [Consensus Protocols: Paxos](https://www.the-paper-trail.org/post/2009-02-03-consensus-protocols-paxos/)
-* [ ] [paxos made live](paxos-made-live.pdf)
+* [x] [paxos made simple](paxos-simple-copy.pdf)
+
+一些参考阅读
+
+[关于Paxos的历史](http://duanple.com/?p=61)
+
+[Lamport’s writings page](http://lamport.azurewebsites.net/pubs/pubs.html#lamport-paxos)
+
+[Consensus Protocols: Paxos](https://www.the-paper-trail.org/post/2009-02-03-consensus-protocols-paxos/)
+
+[consensus](https://www.cs.rutgers.edu/~pxk/417/notes/content/consensus.html)
+
+* [x] [paxos made live](paxos-made-live.pdf)
+
+paxos的工程实践;mulit-paxos:选择master来减少通信和磁盘io。
+
+shadow data structure
+
+vs raft:
+    线性一致性：不能读到旧数据
+    raft：只读操作不能直接从leader返回，需要确保leader不是旧的leader
+    master lease：serve read op locally while master held lease
+    snapshot和raft的类似。每个节点独立的快照，同时需要特定信息来维持log的一致(install snapshot);快照的性能：raft论文中使用`fork`
+
 * [ ] [paxos moderately complex](paxos-moderately-complex.pdf)
 * [ ] [paxos lease](paxoslease.pdf)
 * [ ] [the part-time parliament](the-part-time-parliament.pdf)
+
+[paxos lecture](https://www.youtube.com/watch?v=JEpsBg0AO6o&ab_channel=DiegoOngaro)
+
 * [ ] [Viewstamped replication](vr.pdf)
 
 [vr-revisit](vr-revisited.pdf)
 
-* [ ] [raft](https://raft.github.io/)
+* [x] [raft](https://raft.github.io/)
 * [ ] [zab](zab.pdf)
+
+[atomic broadcast](https://en.wikipedia.org/wiki/Atomic_broadcast)
+
+难受住了，figure 1看不懂
+>Primary-backup is also a special case of Vertical Paxos
+
+* [ ] [FLP](https://danielw.cn/FLP-proof)
+* [ ] [safety and liveness](pcmp.pdf)
 
 * [ ] [Consensus on Transaction Commit](consensus-on-transaction-commit.pdf)
 
@@ -45,6 +76,7 @@ concurrent的事件在偏序中无法定义顺序；通过定义不同进程之�
 
 [The Chubby lock service for loosely-coupled distributed systems](https://www.youtube.com/watch?v=PqItueBaiRg&ab_channel=DataCouncil)
 
+* [ ] [zookeeper](https://www.usenix.org/legacy/events/atc10/tech/full_papers/Hunt.pdf)
 * [ ] [Distributed locks with Redis](https://redis.io/topics/distlock)
 
 ## storage
@@ -57,12 +89,15 @@ concurrent的事件在偏序中无法定义顺序；通过定义不同进程之�
 
 ### filesystem
 
+* [ ] [The Design and Implementation of a Log-Structured File System](log-structured-fs.pdf)
 * [ ] [Sinfonia: a new paradigm for building scalable distributed systems](sinfonia.pdf)
 * [ ] [GFS](gfs.pdf)
-* [ ] [Colossus](https://levy.at/blog/22)
+
+[Colossus](https://levy.at/blog/22)
+
 * [ ] [Finding a needle in Haystack: Facebook’s photo storage](facebook-haystack.pdf)
 * [ ] [seaweedfs](https://github.com/chrislusf/seaweedfs)
-* [ ] [Analysis of Six Distributed File Systems](a_survey_of_dfs.pdf)
+* [x] [Analysis of Six Distributed File Systems](a_survey_of_dfs.pdf)
 * [ ] [f2fs](f2fs.pdf)
 * [ ] [btrfs](btrfs.pdf)
 * [ ] [frangipani](thekkath-frangipani.pdf)
@@ -81,6 +116,8 @@ concurrent的事件在偏序中无法定义顺序；通过定义不同进程之�
 ### DB
 
 * [ ] [f1](f1.pdf)
+
+### 分布式id
 
 ## open-system
 
@@ -113,7 +150,7 @@ concurrent的事件在偏序中无法定义顺序；通过定义不同进程之�
 
 [papers we love](https://github.com/papers-we-love/papers-we-love/tree/master/distributed_systems)
 
-DDIA
+[DDIA](designing_data-intensive_applications.pdf)
 
 [Distributed Systems and the End of the API](https://writings.quilt.org/2014/05/12/distributed-systems-and-the-end-of-the-api/)
 
